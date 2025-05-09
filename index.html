@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="audio-control">
+      <button id="audioToggle" aria-label="Toggle Music">
+        <span class="icon">🔊</span>
+      </button>
+      <audio id="birthdaySong" loop>
+        <source src="audio/happy_birthday.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-front">
+          <div class="birthday-text">
+            <h1 class="title">Happy Birthday!</h1>
+            <p class="subtitle">Click to open</p>
+          </div>
+          <div class="balloon-container"></div>
+        </div>
+        <div class="card-inside">
+          <div class="birthday-message">
+            <h2>Dear <span class="highlight">Beautiful</span>,</h2>
+            <p>
+              On this special day, I want to let you know how much you mean to
+              me. Your smile brightens my day and your kindness touches my
+              heart.
+            </p>
+            <p>May your coming days be as wonderful as you are!</p>
+            <p class="signature">With love, Your Subin</p>
+          </div>
+          <button class="close-card-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cute-animals">
+      <div class="dancing-bunny"></div>
+      <div class="dancing-cat"></div>
+      <div class="dancing-puppy"></div>
+    </div>
+
+    <div class="cake-container">
+      <div class="cake">
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hearts-container"></div>
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/confetti.js"></script>
+  </body>
+</html>
